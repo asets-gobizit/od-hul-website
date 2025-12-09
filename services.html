@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Legal Services - Danny Nissani, Attorney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root { --bg: #0b0d12; --bg-alt: #12151d; --accent: #c9a15a; --text: #f5f5f5; --muted: #b3b3b3; --border: #2a2f3a; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: radial-gradient(circle at top, #1b2230 0, #050609 55%); color: var(--text); line-height: 1.6; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        header { border-bottom: 1px solid var(--border); background: rgba(5, 6, 9, 0.9); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 10; }
+        .nav { max-width: 1000px; margin: 0 auto; padding: 0.8rem 1.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .brand { font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.9rem; color: var(--muted); }
+        .nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+        .nav-links a { color: var(--muted); }
+        .nav-links a.active { color: var(--accent); font-weight: 500; }
+        .lang-switch a { font-weight: 500; }
+        main { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.2rem 3.5rem; }
+        h1 { font-size: 1.8rem; margin-bottom: 0.6rem; }
+        h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin-bottom: 1.6rem; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .card { border-radius: 12px; border: 1px solid var(--border); background: var(--bg-alt); padding: 1.3rem 1.3rem; font-size: 0.95rem; }
+        .card h3 { margin-bottom: 0.4rem; font-size: 1.1rem; }
+        .muted { color: var(--muted); }
+        footer { border-top: 1px solid var(--border); padding: 1.8rem 1.2rem 2.2rem; font-size: 0.82rem; color: var(--muted); text-align: center; background: #050609; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="brand">DANNY NISSANI · ATTORNEY</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="lang-switch"><a href="he/services.html">עברית</a></div>
+        </nav>
+    </header>
+    <main>
+        <h1>Legal Services</h1>
+        <h2>Legal Services for Israelis and Hebrew Speakers Abroad</h2>
+        <p class="muted" style="margin-bottom:1.6rem;">Below is an overview of the main services I provide. For each matter we can agree in advance on the scope of work, price, and timeline – so there are no surprises.</p>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Legal Translation (Non-Notarial)</h3>
+                <p class="muted">Professional translation of legal documents and agreements. The focus is on meaning, legal effect, and risk – not just literal wording. Typical documents include:</p>
+                <p class="muted" style="margin-left:1.1rem; margin-top:0.6rem;">• Business agreements<br>• Service contracts<br>• Lease and rental agreements<br>• Partnership or investment documents</p>
+            </div>
+            <div class="card">
+                <h3>Contracts & Agreements</h3>
+                <p class="muted">Drafting, reviewing, and clarifying business, rental, or partnership agreements. The goal is to identify unclear clauses, hidden risks, and missing protections.</p>
+                <p class="muted">I can help you:</p>
+                <p class="muted" style="margin-left:1.1rem; margin-top:0.4rem;">• Prepare new agreements suited to your situation<br>• Review existing drafts before you sign<br>• Negotiate clearer, fairer terms</p>
+            </div>
+            <div class="card">
+                <h3>Support for Entrepreneurs & Business Formation</h3>
+                <p class="muted">Assisting entrepreneurs with business formation, structure, and risk evaluation in a foreign environment. We focus on:</p>
+                <p class="muted" style="margin-left:1.1rem; margin-top:0.4rem;">• Choosing a basic structure with local professionals<br>• Understanding key obligations and liabilities<br>• Clarifying agreements between partners</p>
+            </div>
+            <div class="card">
+                <h3>Bilingual Document Review</h3>
+                <p class="muted">Clear explanations of Spanish / English documents in Hebrew. You send the document; we go through the key clauses and their consequences, in plain Hebrew.</p>
+                <p class="muted">This is especially useful for:</p>
+                <p class="muted" style="margin-left:1.1rem; margin-top:0.4rem;">• Employment agreements<br>• Long-term leases<br>• Supplier and service contracts</p>
+            </div>
+            <div class="card">
+                <h3>Immigration & Employment Support</h3>
+                <p class="muted">Guidance and referrals to trusted Spanish immigration or labor attorneys, when local representation is needed. I can help you:</p>
+                <p class="muted" style="margin-left:1.1rem; margin-top:0.4rem;">• Clarify your situation and goals<br>• Prepare relevant documents<br>• Connect with suitable local counsel</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © <span id="year"></span> Danny Nissani, Attorney.
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
